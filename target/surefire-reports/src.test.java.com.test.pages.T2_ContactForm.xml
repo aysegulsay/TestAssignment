@@ -1,0 +1,16 @@
+<testsuite failures="0" name="src/test/java/com/test/pages/T2_ContactForm.feature" skipped="0" tests="1" time="75.0056">
+  <testcase classname="src.test.java.com.test.pages.T2_ContactForm" name="1" time="75.0056">
+    <system-out>* configure driver = { type: 'chromedriver', showDriverLog: true } ........ passed
+Given driver 'https://room5.trivago.com/' ................................. passed
+And click("//a[text()='Contact']") ........................................ passed
+Then waitForUrl('https://magazine.trivago.com/contact/') .................. passed
+Then switchPage('https://magazine.trivago.com/contact/') .................. passed
+And input("//textarea[@class='contact-msg']", 'This is for testing.') ..... passed
+And input("input.contact-input", 'Testuser') .............................. passed
+And input("//input[@id='contact-email']", 'ponik72938@aalyaa.com') ........ passed
+And delay(2000) ........................................................... passed
+And click("//input[@id='confirm']") ....................................... passed
+When submit().click("//button[@class='contact-submit']") .................. passed
+Then waitForText('body','Message Sent Successfully!') ..................... passed</system-out>
+  </testcase>
+</testsuite>

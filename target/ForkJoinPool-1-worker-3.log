@@ -1,0 +1,524 @@
+19:26:40.660 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:26:40.787 preferred port 9515 not available, will use: 54038
+19:26:42.000 request:
+1 > POST http://localhost:54038/session
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 57
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:54038
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+19:26:46.130 response time in milliseconds: 4126,10
+1 < 200
+1 < Content-Length: 718
+1 < Content-Type: application/json; charset=utf-8
+1 < cache-control: no-cache
+{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"86.0.4240.193","chrome":{"chromedriverVersion":"86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378})","userDataDir":"C:\\Users\\ayseg\\AppData\\Local\\Temp\\scoped_dir11784_2092629372"},"goog:chromeOptions":{"debuggerAddress":"localhost:54041"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:virtualAuthenticators":true},"sessionId":"9c053568942b3c9aa6c111ad7c042028"}}
+
+19:26:46.206 init session id: 9c053568942b3c9aa6c111ad7c042028
+19:26:46.217 request:
+2 > GET http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/window
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:54038
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+
+19:26:47.460 response time in milliseconds: 1240,73
+2 < 200
+2 < Content-Length: 53
+2 < Content-Type: application/json; charset=utf-8
+2 < cache-control: no-cache
+{"value":"CDwindow-E1551659EEC32C45EF2D366B8690A255"}
+
+19:26:47.463 init window id: CDwindow-E1551659EEC32C45EF2D366B8690A255
+19:26:47.795 request:
+3 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/url
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Content-Length: 36
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:54038
+3 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"url":"https://room5.trivago.com/"}
+
+19:26:55.302 response time in milliseconds: 7504,06
+3 < 200
+3 < Content-Length: 14
+3 < Content-Type: application/json; charset=utf-8
+3 < cache-control: no-cache
+{"value":null}
+
+19:26:58.029 request:
+4 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/element
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Content-Length: 54
+4 > Content-Type: application/json; charset=UTF-8
+4 > Host: localhost:54038
+4 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"using":"css selector","value":"input[name='email']"}
+
+19:26:58.496 response time in milliseconds: 466,16
+4 < 200
+4 < Content-Length: 88
+4 < Content-Type: application/json; charset=utf-8
+4 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b6ff786e-7ac7-4691-a66b-8f4309555232"}}
+
+19:26:58.505 request:
+5 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/element/b6ff786e-7ac7-4691-a66b-8f4309555232/value
+5 > Accept-Encoding: gzip,deflate
+5 > Connection: Keep-Alive
+5 > Content-Length: 27
+5 > Content-Type: application/json; charset=UTF-8
+5 > Host: localhost:54038
+5 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"text":"saysgl@gmail.com"}
+
+19:27:00.281 response time in milliseconds: 1775,88
+5 < 200
+5 < Content-Length: 14
+5 < Content-Type: application/json; charset=utf-8
+5 < cache-control: no-cache
+{"value":null}
+
+19:27:00.297 request:
+6 > GET http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/url
+6 > Accept-Encoding: gzip,deflate
+6 > Connection: Keep-Alive
+6 > Host: localhost:54038
+6 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+
+19:27:00.488 response time in milliseconds: 187,48
+6 < 200
+6 < Content-Length: 41
+6 < Content-Type: application/json; charset=utf-8
+6 < cache-control: no-cache
+{"value":"https://magazine.trivago.com/"}
+
+19:27:00.541 request:
+7 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/element
+7 > Accept-Encoding: gzip,deflate
+7 > Connection: Keep-Alive
+7 > Content-Length: 39
+7 > Content-Type: application/json; charset=UTF-8
+7 > Host: localhost:54038
+7 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"using":"css selector","value":"html"}
+
+19:27:00.672 response time in milliseconds: 129,84
+7 < 200
+7 < Content-Length: 88
+7 < Content-Type: application/json; charset=utf-8
+7 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"d07e3139-0861-432c-b066-249750c8dbab"}}
+
+19:27:00.689 request:
+8 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/execute/sync
+8 > Accept-Encoding: gzip,deflate
+8 > Connection: Keep-Alive
+8 > Content-Length: 131
+8 > Content-Type: application/json; charset=UTF-8
+8 > Host: localhost:54038
+8 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"script":"return document.evaluate(\"//button[text()='Inspire Me']\", document, null, 9, null).singleNodeValue.click()","args":[]}
+
+19:27:01.247 response time in milliseconds: 556,40
+8 < 200
+8 < Content-Length: 14
+8 < Content-Type: application/json; charset=utf-8
+8 < cache-control: no-cache
+{"value":null}
+
+19:27:01.250 request:
+9 > GET http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/url
+9 > Accept-Encoding: gzip,deflate
+9 > Connection: Keep-Alive
+9 > Host: localhost:54038
+9 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+
+19:27:01.521 response time in milliseconds: 269,29
+9 < 200
+9 < Content-Length: 41
+9 < Content-Type: application/json; charset=utf-8
+9 < cache-control: no-cache
+{"value":"https://magazine.trivago.com/"}
+
+19:27:01.528 request:
+10 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/element
+10 > Accept-Encoding: gzip,deflate
+10 > Connection: Keep-Alive
+10 > Content-Length: 39
+10 > Content-Type: application/json; charset=UTF-8
+10 > Host: localhost:54038
+10 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"using":"css selector","value":"html"}
+
+19:27:01.620 response time in milliseconds: 91,53
+10 < 200
+10 < Content-Length: 88
+10 < Content-Type: application/json; charset=utf-8
+10 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"d07e3139-0861-432c-b066-249750c8dbab"}}
+
+19:27:01.621 waiting for document to change - retry #1
+19:27:02.137 request:
+11 > GET http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/url
+11 > Accept-Encoding: gzip,deflate
+11 > Connection: Keep-Alive
+11 > Host: localhost:54038
+11 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+
+19:27:02.343 response time in milliseconds: 204,93
+11 < 200
+11 < Content-Length: 41
+11 < Content-Type: application/json; charset=utf-8
+11 < cache-control: no-cache
+{"value":"https://magazine.trivago.com/"}
+
+19:27:02.353 request:
+12 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/element
+12 > Accept-Encoding: gzip,deflate
+12 > Connection: Keep-Alive
+12 > Content-Length: 39
+12 > Content-Type: application/json; charset=UTF-8
+12 > Host: localhost:54038
+12 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"using":"css selector","value":"html"}
+
+19:27:02.524 response time in milliseconds: 169,26
+12 < 200
+12 < Content-Length: 88
+12 < Content-Type: application/json; charset=utf-8
+12 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"d07e3139-0861-432c-b066-249750c8dbab"}}
+
+19:27:02.525 waiting for document to change - retry #2
+19:27:03.030 request:
+13 > GET http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/url
+13 > Accept-Encoding: gzip,deflate
+13 > Connection: Keep-Alive
+13 > Host: localhost:54038
+13 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+
+19:27:03.436 response time in milliseconds: 404,78
+13 < 200
+13 < Content-Length: 41
+13 < Content-Type: application/json; charset=utf-8
+13 < cache-control: no-cache
+{"value":"https://magazine.trivago.com/"}
+
+19:27:03.443 request:
+14 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/element
+14 > Accept-Encoding: gzip,deflate
+14 > Connection: Keep-Alive
+14 > Content-Length: 39
+14 > Content-Type: application/json; charset=UTF-8
+14 > Host: localhost:54038
+14 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"using":"css selector","value":"html"}
+
+19:27:03.491 response time in milliseconds: 48,26
+14 < 200
+14 < Content-Length: 88
+14 < Content-Type: application/json; charset=utf-8
+14 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"d07e3139-0861-432c-b066-249750c8dbab"}}
+
+19:27:03.492 waiting for document to change - retry #3
+19:27:04.011 request:
+15 > GET http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/url
+15 > Accept-Encoding: gzip,deflate
+15 > Connection: Keep-Alive
+15 > Host: localhost:54038
+15 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+
+19:27:04.136 response time in milliseconds: 122,41
+15 < 200
+15 < Content-Length: 41
+15 < Content-Type: application/json; charset=utf-8
+15 < cache-control: no-cache
+{"value":"https://magazine.trivago.com/"}
+
+19:27:04.143 request:
+16 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/element
+16 > Accept-Encoding: gzip,deflate
+16 > Connection: Keep-Alive
+16 > Content-Length: 39
+16 > Content-Type: application/json; charset=UTF-8
+16 > Host: localhost:54038
+16 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"using":"css selector","value":"html"}
+
+19:27:04.227 response time in milliseconds: 83,84
+16 < 200
+16 < Content-Length: 88
+16 < Content-Type: application/json; charset=utf-8
+16 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"d07e3139-0861-432c-b066-249750c8dbab"}}
+
+19:27:04.228 failed after 3 retries and 2979 milliseconds
+19:27:04.248 request:
+17 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/execute/sync
+17 > Accept-Encoding: gzip,deflate
+17 > Connection: Keep-Alive
+17 > Content-Length: 67
+17 > Content-Type: application/json; charset=UTF-8
+17 > Host: localhost:54038
+17 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"script":"return //p[text()='You are now checked-in!']","args":[]}
+
+19:27:04.397 response time in milliseconds: 147,59
+17 < 200
+17 < Content-Length: 14
+17 < Content-Type: application/json; charset=utf-8
+17 < cache-control: no-cache
+{"value":null}
+
+19:27:04.398 waitUntil (js) - retry #1
+19:27:07.409 request:
+18 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/execute/sync
+18 > Accept-Encoding: gzip,deflate
+18 > Connection: Keep-Alive
+18 > Content-Length: 67
+18 > Content-Type: application/json; charset=UTF-8
+18 > Host: localhost:54038
+18 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"script":"return //p[text()='You are now checked-in!']","args":[]}
+
+19:27:07.442 response time in milliseconds: 32,34
+18 < 200
+18 < Content-Length: 14
+18 < Content-Type: application/json; charset=utf-8
+18 < cache-control: no-cache
+{"value":null}
+
+19:27:07.443 waitUntil (js) - retry #2
+19:27:10.458 request:
+19 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/execute/sync
+19 > Accept-Encoding: gzip,deflate
+19 > Connection: Keep-Alive
+19 > Content-Length: 67
+19 > Content-Type: application/json; charset=UTF-8
+19 > Host: localhost:54038
+19 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"script":"return //p[text()='You are now checked-in!']","args":[]}
+
+19:27:10.484 response time in milliseconds: 23,80
+19 < 200
+19 < Content-Length: 14
+19 < Content-Type: application/json; charset=utf-8
+19 < cache-control: no-cache
+{"value":null}
+
+19:27:10.485 waitUntil (js) - retry #3
+19:27:13.493 request:
+20 > POST http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/execute/sync
+20 > Accept-Encoding: gzip,deflate
+20 > Connection: Keep-Alive
+20 > Content-Length: 67
+20 > Content-Type: application/json; charset=UTF-8
+20 > Host: localhost:54038
+20 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"script":"return //p[text()='You are now checked-in!']","args":[]}
+
+19:27:13.518 response time in milliseconds: 24,18
+20 < 200
+20 < Content-Length: 14
+20 < Content-Type: application/json; charset=utf-8
+20 < cache-control: no-cache
+{"value":null}
+
+19:27:13.519 failed after 3 retries and 9276 milliseconds
+19:27:13.524 request:
+21 > DELETE http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028/window
+21 > Accept-Encoding: gzip,deflate
+21 > Connection: Keep-Alive
+21 > Host: localhost:54038
+21 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+
+19:27:13.625 response time in milliseconds: 99,75
+21 < 200
+21 < Content-Length: 12
+21 < Content-Type: application/json; charset=utf-8
+21 < cache-control: no-cache
+{"value":[]}
+
+19:27:13.627 request:
+22 > DELETE http://localhost:54038/session/9c053568942b3c9aa6c111ad7c042028
+22 > Accept-Encoding: gzip,deflate
+22 > Connection: Keep-Alive
+22 > Host: localhost:54038
+22 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+
+19:27:14.047 response time in milliseconds: 420,53
+22 < 200
+22 < Content-Length: 14
+22 < Content-Type: application/json; charset=utf-8
+22 < cache-control: no-cache
+{"value":null}
+
+value":null}
+
+19:12:05.926 request:
+10 > POST http://localhost:53497/session/b572a2888b29a0fd39eb3298571b4412/execute/sync
+10 > Accept-Encoding: gzip,deflate
+10 > Connection: Keep-Alive
+10 > Content-Length: 168
+10 > Content-Type: application/json; charset=UTF-8
+10 > Host: localhost:53497
+10 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"script":"return document.evaluate(\"//span[text()='The Top 9 Memory Making Family Resorts in Arizona']\", document, null, 9, null).singleNodeValue.click()","args":[]}
+
+19:12:36.031 java.net.SocketTimeoutException: Read timed out, http call failed after 30104 milliseconds for URL: http://localhost:53497/session/b572a2888b29a0fd39eb3298571b4412/execute/sync
+19:12:36.032 http request failed: 
+java.net.SocketTimeoutException: Read timed out
+19:12:36.038 request:
+11 > DELETE http://localhost:53497/session/b572a2888b29a0fd39eb3298571b4412/execute/sync/window
+11 > Accept-Encoding: gzip,deflate
+11 > Connection: Keep-Alive
+11 > Content-Length: 168
+11 > Content-Type: application/json; charset=UTF-8
+11 > Host: localhost:53497
+11 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"script":"return document.evaluate(\"//span[text()='The Top 9 Memory Making Family Resorts in Arizona']\", document, null, 9, null).singleNodeValue.click()","args":[]}
+
+19:12:36.045 response time in milliseconds: 5,25
+11 < 404
+11 < Content-Length: 908
+11 < Content-Type: application/json; charset=utf-8
+11 < cache-control: no-cache
+{"value":{"error":"unknown command","message":"unknown command: unknown command: session/b572a2888b29a0fd39eb3298571b4412/execute/sync/window","stacktrace":"Backtrace:\n\tOrdinal0 [0x00B5C013+3194899]\n\tOrdinal0 [0x00A46021+2056225]\n\tOrdinal0 [0x008DF608+587272]\n\tOrdinal0 [0x0087E1FC+188924]\n\tOrdinal0 [0x0087DFDA+188378]\n\tOrdinal0 [0x00852027+8231]\n\tOrdinal0 [0x008524F6+9462]\n\tOrdinal0 [0x00852B81+11137]\n\tOrdinal0 [0x00A5CE64+2149988]\n\tGetHandleVerifier [0x00CCBE95+1400773]\n\tGetHandleVerifier [0x00CCBB61+1399953]\n\tGetHandleVerifier [0x00CD31FA+1430314]\n\tGetHandleVerifier [0x00CCC69F+1402831]\n\tOrdinal0 [0x00A53D61+2112865]\n\tOrdinal0 [0x00851D85+7557]\n\tOrdinal0 [0x00851844+6212]\n\tGetHandleVerifier [0x00E9E5AC+3311324]\n\tBaseThreadInitThunk [0x76D1FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x773E75F4+228]\n\tRtlGetAppContainerNamedObjectPath [0x773E75C4+180]\n"}}
+
+19:12:36.046 http response code: 404, response: {"value":{"stacktrace":"Backtrace:\n\tOrdinal0 [0x00B5C013+3194899]\n\tOrdinal0 [0x00A46021+2056225]\n\tOrdinal0 [0x008DF608+587272]\n\tOrdinal0 [0x0087E1FC+188924]\n\tOrdinal0 [0x0087DFDA+188378]\n\tOrdinal0 [0x00852027+8231]\n\tOrdinal0 [0x008524F6+9462]\n\tOrdinal0 [0x00852B81+11137]\n\tOrdinal0 [0x00A5CE64+2149988]\n\tGetHandleVerifier [0x00CCBE95+1400773]\n\tGetHandleVerifier [0x00CCBB61+1399953]\n\tGetHandleVerifier [0x00CD31FA+1430314]\n\tGetHandleVerifier [0x00CCC69F+1402831]\n\tOrdinal0 [0x00A53D61+2112865]\n\tOrdinal0 [0x00851D85+7557]\n\tOrdinal0 [0x00851844+6212]\n\tGetHandleVerifier [0x00E9E5AC+3311324]\n\tBaseThreadInitThunk [0x76D1FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x773E75F4+228]\n\tRtlGetAppContainerNamedObjectPath [0x773E75C4+180]\n","error":"unknown command","message":"unknown command: unknown command: session/b572a2888b29a0fd39eb3298571b4412/execute/sync/window"}}, request: [method: DELETE, responseTime: 5.2527, body: {"script":"return document.evaluate(\"//span[text()='The Top 9 Memory Making Family Resorts in Arizona']\", document, null, 9, null).singleNodeValue.click()","args":[]}]
+19:12:36.075 request:
+12 > DELETE http://localhost:53497/session/b572a2888b29a0fd39eb3298571b4412
+12 > Accept-Encoding: gzip,deflate
+12 > Connection: Keep-Alive
+12 > Host: localhost:53497
+12 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+
+19:12:50.884 response time in milliseconds: 14808,07
+12 < 200
+12 < Content-Length: 14
+12 < Content-Type: application/json; charset=utf-8
+12 < cache-control: no-cache
+{"value":null}
+
+ine.trivago.com/contact/"}
+
+18:49:02.619 request:
+31 > POST http://localhost:52586/session/5279830a3b4789dde13864e410b9971e/element
+31 > Accept-Encoding: gzip,deflate
+31 > Connection: Keep-Alive
+31 > Content-Length: 39
+31 > Content-Type: application/json; charset=UTF-8
+31 > Host: localhost:52586
+31 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"using":"css selector","value":"html"}
+
+18:49:02.673 response time in milliseconds: 53,67
+31 < 200
+31 < Content-Length: 88
+31 < Content-Type: application/json; charset=utf-8
+31 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"63a1832b-c6c3-4ce1-96de-324aee655877"}}
+
+18:49:02.674 waiting for document to change - retry #3
+18:49:03.187 request:
+32 > GET http://localhost:52586/session/5279830a3b4789dde13864e410b9971e/url
+32 > Accept-Encoding: gzip,deflate
+32 > Connection: Keep-Alive
+32 > Host: localhost:52586
+32 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+
+18:49:03.199 response time in milliseconds: 10,21
+32 < 200
+32 < Content-Length: 49
+32 < Content-Type: application/json; charset=utf-8
+32 < cache-control: no-cache
+{"value":"https://magazine.trivago.com/contact/"}
+
+18:49:03.202 request:
+33 > POST http://localhost:52586/session/5279830a3b4789dde13864e410b9971e/element
+33 > Accept-Encoding: gzip,deflate
+33 > Connection: Keep-Alive
+33 > Content-Length: 39
+33 > Content-Type: application/json; charset=UTF-8
+33 > Host: localhost:52586
+33 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"using":"css selector","value":"html"}
+
+18:49:03.216 response time in milliseconds: 12,87
+33 < 200
+33 < Content-Length: 88
+33 < Content-Type: application/json; charset=utf-8
+33 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"63a1832b-c6c3-4ce1-96de-324aee655877"}}
+
+18:49:03.216 failed after 3 retries and 1795 milliseconds
+18:49:03.228 request:
+34 > POST http://localhost:52586/session/5279830a3b4789dde13864e410b9971e/execute/sync
+34 > Accept-Encoding: gzip,deflate
+34 > Connection: Keep-Alive
+34 > Content-Length: 189
+34 > Content-Type: application/json; charset=UTF-8
+34 > Host: localhost:52586
+34 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"script":"return (function(){ var fun = function(_){ return _.textContent.includes('Message Sent Successfully!') }; var e = document.querySelector(\"body\"); return fun(e) })()","args":[]}
+
+18:49:03.272 response time in milliseconds: 42,92
+34 < 200
+34 < Content-Length: 15
+34 < Content-Type: application/json; charset=utf-8
+34 < cache-control: no-cache
+{"value":false}
+
+18:49:03.273 waitUntil (js) - retry #1
+18:49:06.844 request:
+35 > POST http://localhost:52586/session/5279830a3b4789dde13864e410b9971e/execute/sync
+35 > Accept-Encoding: gzip,deflate
+35 > Connection: Keep-Alive
+35 > Content-Length: 189
+35 > Content-Type: application/json; charset=UTF-8
+35 > Host: localhost:52586
+35 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+{"script":"return (function(){ var fun = function(_){ return _.textContent.includes('Message Sent Successfully!') }; var e = document.querySelector(\"body\"); return fun(e) })()","args":[]}
+
+18:49:06.867 response time in milliseconds: 22,17
+35 < 200
+35 < Content-Length: 14
+35 < Content-Type: application/json; charset=utf-8
+35 < cache-control: no-cache
+{"value":true}
+
+18:49:06.873 request:
+36 > DELETE http://localhost:52586/session/5279830a3b4789dde13864e410b9971e/window
+36 > Accept-Encoding: gzip,deflate
+36 > Connection: Keep-Alive
+36 > Host: localhost:52586
+36 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+
+18:49:06.916 response time in milliseconds: 41,49
+36 < 200
+36 < Content-Length: 55
+36 < Content-Type: application/json; charset=utf-8
+36 < cache-control: no-cache
+{"value":["CDwindow-2DA4D24EC1C80AF39B7D9CD14DDEFB12"]}
+
+18:49:06.922 request:
+37 > DELETE http://localhost:52586/session/5279830a3b4789dde13864e410b9971e
+37 > Accept-Encoding: gzip,deflate
+37 > Connection: Keep-Alive
+37 > Host: localhost:52586
+37 > User-Agent: Apache-HttpClient/4.5.11 (Java/14.0.2)
+
+18:49:13.574 response time in milliseconds: 6650,83
+37 < 200
+37 < Content-Length: 14
+37 < Content-Type: application/json; charset=utf-8
+37 < cache-control: no-cache
+{"value":null}
+

@@ -1,0 +1,15 @@
+<testsuite failures="0" name="src/test/java/com/test/pages/T4_NavigateToDestination.feature" skipped="0" tests="1" time="46.836998">
+  <testcase classname="src.test.java.com.test.pages.T4_NavigateToDestination" name="1" time="46.836998">
+    <system-out>* configure driver = { type: 'chromedriver', showDriverLog: true } ........ passed
+Given driver 'https://magazine.trivago.com/' .............................. passed
+And delay(2000) ........................................................... passed
+And click("//div[@class='nav-icon']") ..................................... passed
+And delay(2000) ........................................................... passed
+When click("//div[@class='menu-sign plus-sign']") ......................... passed
+And delay(2000) ........................................................... passed
+And focus("//div[text()='Northwest']") .................................... passed
+And click('{div}Northwest') ............................................... passed
+Then match driver.url == 'https://magazine.trivago.com/destination/northwest/' . passed
+Then match driver.title == "Northwest" .................................... passed</system-out>
+  </testcase>
+</testsuite>
