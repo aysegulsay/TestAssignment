@@ -1,0 +1,11 @@
+<testsuite failures="0" name="src/test/java/com/test/pages/T1_Search.feature" skipped="0" tests="1" time="52.644044">
+  <testcase classname="src.test.java.com.test.pages.T1_Search" name="1" time="52.644044">
+    <system-out>* configure driver = { type: 'chromedriver', showDriverLog: true } ........ passed
+Given driver 'https://room5.trivago.com/' ................................. passed
+And click("//div[@class='search-icon']") .................................. passed
+When input("//input[@placeholder='Search']", 'arizona' + Key.ENTER) ....... passed
+And focus("//div[@class='search-results']") ............................... passed
+When click("//span[text()='The Top 9 Memory Making Family Resorts in Arizona']") . passed
+Then match driver.title == "The Top 9 Memory Making Family Resorts in Arizona" . passed</system-out>
+  </testcase>
+</testsuite>
